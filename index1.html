@@ -12,27 +12,38 @@
             background-size: cover;
             background-position: center;
             height: 100vh;
-            color: white; 
-            
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
-        #Btn{
-            padding: 30px;
-            margin-left: 600px;
-            margin-top: 200px;
+        #Btn {
+            padding: 15px 30px;
             border-radius: 10px;
             border: none;
-            background-color: rgb(3, 3, 3);
-            color: rgb(255, 254, 254);
-            width: 150px;
-            height: 75px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
-        h1{
-            text-align: center;
+        #Btn:hover {
+            background-color: rgb(70, 70, 70);
+        }
+        a {
+            text-decoration: none;
+        }
+        h1 {
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <h1>Search Spicy By SpicyFoods</h1>
-    <a href="https://www.google.com/search?q=spicy+chicken+food"><button id="Btn">Search</button></a>
+    <a href="https://www.google.com/search?q=spicy+chicken+food" target="_blank">
+        <button id="Btn" aria-label="Search for spicy chicken food on Google">Search</button>
+    </a>
 </body>
 </html>
